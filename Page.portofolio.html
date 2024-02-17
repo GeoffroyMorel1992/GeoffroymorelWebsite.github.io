@@ -18,15 +18,15 @@
         }
 
         header {
-    font-size: 40px;
-    padding: 10px 20px; /* Ajouté une marge à gauche et à droite */
-    padding-left: 600px; /* Add padding to the left */
-    background-color: rgb(29, 29, 96);
-    color: white;
-    display: flex;
-    justify-content: space-between; /* Aligner les éléments à l'extrémité */
-    align-items: center;
-}
+            font-size: 40px;
+            padding: 10px 20px;
+            padding-left: 600px;
+            background-color: rgb(29, 29, 96);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
         #home-link {
             color: white;
@@ -57,16 +57,27 @@
         }
 
         .text-container {
-            max-width: 700px; /* Ajusté la largeur du texte */
+            max-width: 700px;
             text-align: left;
             font-size: 18px;
-            margin: 0 10px; /* Ajusté la marge du texte */
+            margin: 0 10px;
         }
 
         .additional-text,
         .centered-text {
             font-size: 18px;
             margin: 10px 0;
+        }
+
+        .view-project-button {
+            background-color: #3F51B5; /* Couleur verte pour le bouton */
+            color: #ffffff; /* Texte blanc sur le bouton */
+            border: 2px solid #3F51B5; /* Bordure de la même couleur que le fond */
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
         }
 
         @keyframes moveFromLeft {
@@ -104,6 +115,7 @@
                 <li>Cash flow</li>
             </ul>
             <p>We will also be able to conduct detailed analyses on costs, monitor the performance of different Business Units with the evaluation of profitability and the efficiency of resource utilization.</p>
+            <button class="view-project-button">View project</button>
         </div>
         <img src="financial.webp" class="img-container">
     </div>
@@ -116,6 +128,7 @@
             <p>The dashboards will present KPIs in an organized manner through data and charts, thereby facilitating the visualization of trends and comparisons.</p>
             <p>We will be able to transition from an overview to a detailed understanding of the data.</p>
             <p>These in-depth analyses will form the foundation for informed strategic decision-making.</p>
+            <button class="view-project-button">View project</button>
         </div>
         <img src="KPIs.webp" class="img-container">
     </div>
@@ -134,6 +147,7 @@
                 <li>Production forecasts based on demand</li>
                 <li>Optimization of operational costs</li>
             </ul>
+            <button class="view-project-button">View project</button>
         </div>
         <img src="Budget.jpg" class="img-container">
     </div>

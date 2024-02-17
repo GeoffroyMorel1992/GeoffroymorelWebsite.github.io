@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('fond - claire.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Book Antiqua', sans-serif;
+            text-align: center;
+            color: #000000;
+        }
+
+        header {
+    font-size: 40px;
+    padding: 10px 20px; /* Ajouté une marge à gauche et à droite */
+    padding-left: 600px; /* Add padding to the left */
+    background-color: rgb(29, 29, 96);
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Aligner les éléments à l'extrémité */
+    align-items: center;
+}
+
+        #home-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .separator {
+            width: 80%;
+            margin: 10px auto;
+            border-bottom: 2px solid #000000;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            animation: moveFromLeft 1.5s ease-out;
+        }
+
+        .img-container {
+            width: 400px;
+            height: 300px;
+            margin: 10px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+
+        .text-container {
+            max-width: 700px; /* Ajusté la largeur du texte */
+            text-align: left;
+            font-size: 18px;
+            margin: 0 10px; /* Ajusté la marge du texte */
+        }
+
+        .additional-text,
+        .centered-text {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        @keyframes moveFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Portfolio Projects
+        <a id="home-link" href="file:///C:/Users/Morel/OneDrive/Documents/Formations/IT%20tools/Website/All%20merge/Page.accueil.html">Home</a>
+    </header>
+
+    <div class="additional-text">
+        <p>All the financial and operational analyses I have conducted are based on the database provided by Microsoft.</p>
+        <p>This database named "AdventureWorks 2022" reflects the typical information and tables found in an industrial enterprise.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="content-container">
+        <div class="text-container Financial Statements">
+            <h2>Financial Statement:</h2>
+            <p>Using knowledge in accounting and cost accounting, we will be able to set up the following financial statements:</p>
+            <ul>
+                <li>Income statement</li>
+                <li>Balance sheet</li>
+                <li>Cash flow</li>
+            </ul>
+            <p>We will also be able to conduct detailed analyses on costs, monitor the performance of different Business Units with the evaluation of profitability and the efficiency of resource utilization.</p>
+        </div>
+        <img src="financial.webp" class="img-container">
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="content-container">
+        <div class="text-container Dashboards & KPIs">
+            <h2>Dashboards & KPIs:</h2>
+            <p>The dashboards will present KPIs in an organized manner through data and charts, thereby facilitating the visualization of trends and comparisons.</p>
+            <p>We will be able to transition from an overview to a detailed understanding of the data.</p>
+            <p>These in-depth analyses will form the foundation for informed strategic decision-making.</p>
+        </div>
+        <img src="KPIs.webp" class="img-container">
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- Third Block -->
+    <div class="content-container">
+        <div class="text-container Budget and Forecast">
+            <h2>Budget and Forecast:</h2>
+            <p>The use of machine learning and algorithms in the establishment of financial and industrial budgets and forecasts can significantly enhance precision and efficiency.</p>
+            <ul>
+                <li>Analysis of financial trends based on historical data</li>
+                <li>Optimization of budgets through an optimal allocation system of resources</li>
+                <li>Inventory management considering current market and logistics influences</li>
+                <li>Production forecasts based on demand</li>
+                <li>Optimization of operational costs</li>
+            </ul>
+        </div>
+        <img src="Budget.jpg" class="img-container">
+    </div>
+
+    <div class="separator"></div>
+
+</body>
+
+</html>

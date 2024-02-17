@@ -1,39 +1,27 @@
 # Purpose of Creating My Website
 
-I have created a website to succinctly present my professional background and my project in data management and financial and operational analyses, specifically in the context of an industrial company, to my prospective employer.
+I have developed a website with the aim of concisely showcasing both my professional background and my project expertise in data management, along with financial and operational analyses. This presentation is tailored specifically to resonate with potential employers within the industrial sector.
 
-## Website Content
 
-### Home Page
+# Home Page
 
-The website's home page will include the following elements:
+- Summary of Professional Background and Degrees
 
-#### Summary of Professional Background and Degrees
+- Introduction to Data Analyses Project and the goals
 
-General overview of my professional experiences in the finance field and the degrees I have obtained.
+- Prerequisites with a list of skills, knowledge, and qualifications required
+  
 
-#### Data Analysis Project
+# Project Page
 
-Highlighting the goals of the data analysis project and the expected outcomes.
+- Presentation of specific analyses related to financial reports with a GitHub link.
 
-#### Prerequisites
+- Explanation of the importance of implementing Dashboard and KPI with a GitHub link.
 
-List of skills, knowledge, and qualifications required to collaborate effectively on projects related to data management in the finance department.
+- dashboards with KPIs, along with a GitHub link.
 
-### Project Page
+- Budget and Forecast Creation
 
-The page dedicated to the data analysis project will provide detailed information on the following aspects:
-
-#### Financial Reports
-
-Presentation of specific analyses related to financial reports with a GitHub link.
-
-#### Dashboard and KPI
-
-Explanation of the importance of implementing dashboards with KPIs, along with a GitHub link.
-
-#### Budget and Forecast Creation
-
-Explanation of the process and methodologies used to develop budgets and financial forecasts.
+- Explanation of the process and methodologies used to develop budgets and financial forecasts.
 
 

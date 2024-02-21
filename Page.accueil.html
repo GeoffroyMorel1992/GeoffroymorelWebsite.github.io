@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Geoffroy Morel’s Website</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         body {
             font-family: 'Arial Rounded MT Bold', sans-serif;
@@ -12,9 +15,13 @@
             padding: 0;
             background: url('C:\\Users\\Morel\\OneDrive\\Documents\\Formations\\IT tools\\Website\\all merge\\fond - finance.jpg') no-repeat center center fixed;
             background-size: cover;
+            position: relative; /* Added for positioning social icons */
         }
 
-        h1, h2, p, li {
+        h1,
+        h2,
+        p,
+        li {
             font-family: 'Book Antiqua', sans-serif;
         }
 
@@ -54,7 +61,7 @@
             display: flex;
             margin-left: 10px;
             margin-right: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .img-container {
@@ -82,10 +89,31 @@
             margin-bottom: 15px;
             font-size: 18px;
         }
+
+        /* New style for social icons */
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            display: flex;
+            gap: 40px; /* Increased spacing */
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 60px; /* Increased size */
+            text-decoration: none; /* Remove underline */
+        }
     </style>
 </head>
 
 <body>
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/geoffroy-morel-759b99b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/GeoffroyMorel1992" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
     <div class="header">
         <h1>Welcome to Geoffroy Morel’s Website</h1>
     </div>
@@ -98,6 +126,7 @@
         </div>
     </div>
 
+
     <!-- Section 1 -->
     <div class="content-container">
         <img src="Geoffroy.png" alt="Geoffroy" class="img-container">
@@ -106,7 +135,7 @@
             <p>Holding two Master's degrees in finance, one in banking finance and the other in finance, audit and controlling, I have gained over 7 years of experience as a financial controller and plant controller in international companies.</p>
             <p>Convinced of the crucial importance of efficient data management for a company, I undertook a 6-month career break to deepen my skills in two areas:</p>
             <p><li>Data analysis: I have trained myself in essential business software tools to exploit data in an optimal way</li></p>
-            <p></p><li>Financial analysis: Improving skills in data analysis, budgeting, forecasting and strategic recommendations</li></p>
+            <p><li>Financial analysis: Improving skills in data analysis, budgeting, forecasting and strategic recommendations</li></p>
             <p>My ultimate goal was to acquire a dual specialization in data analysis and corporate finance.</p>
         </div>
     </div>

@@ -90,6 +90,24 @@
             }
         }
     </style>
+
+    <script>
+        function redirectToGitHub(projectName) {
+            switch (projectName) {
+                case 'Financial Statements':
+                    window.open('https://github.com/GeoffroyMorel1992/Financial-Statements', '_blank');
+                    break;
+                case 'Dashboards & KPIs':
+                    window.open('https://github.com/GeoffroyMorel1992/Dashboard-and-KPIs', '_blank');
+                    break;
+                case 'Budget and Forecast':
+                    window.open('https://github.com/GeoffroyMorel1992/Budget-and-Forecast', '_blank');
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -105,6 +123,7 @@
 
     <div class="separator"></div>
 
+    <!-- First Block -->
     <div class="content-container">
         <div class="text-container Financial Statements">
             <h2>Financial Statement:</h2>
@@ -115,20 +134,21 @@
                 <li>Cash flow</li>
             </ul>
             <p>We will also be able to conduct detailed analyses on costs, monitor the performance of different Business Units with the evaluation of profitability and the efficiency of resource utilization.</p>
-            <button class="view-project-button">View project</button>
+            <button class="view-project-button" onclick="redirectToGitHub('Financial Statements');">View project</button>
         </div>
         <img src="financial.png" class="img-container">
     </div>
 
     <div class="separator"></div>
 
+    <!-- Second Block -->
     <div class="content-container">
         <div class="text-container Dashboards & KPIs">
             <h2>Dashboards & KPIs:</h2>
             <p>The dashboards will present KPIs in an organized manner through data and charts, thereby facilitating the visualization of trends and comparisons.</p>
             <p>We will be able to transition from an overview to a detailed understanding of the data.</p>
             <p>These in-depth analyses will form the foundation for informed strategic decision-making.</p>
-            <button class="view-project-button">View project</button>
+            <button class="view-project-button" onclick="redirectToGitHub('Dashboards & KPIs');">View project</button>
         </div>
         <img src="KPIs.png" class="img-container">
     </div>
@@ -147,13 +167,12 @@
                 <li>Production forecasts based on demand</li>
                 <li>Optimization of operational costs</li>
             </ul>
-            <button class="view-project-button">View project</button>
+            <button class="view-project-button" onclick="redirectToGitHub('Budget and Forecast');">View project</button>
         </div>
         <img src="Budget.jpg" class="img-container">
     </div>
 
     <div class="separator"></div>
-
 </body>
 
 </html>

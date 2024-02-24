@@ -60,15 +60,16 @@
 
         .content-container {
             display: flex;
+            flex-direction: column; /* Ajustement pour les petits écrans */
             margin-left: 10px;
             margin-right: 20px;
             margin-bottom: 30px;
         }
 
         .img-container {
+            width: 100%; /* Ajustement pour les petits écrans */
             max-width: 400px;
-            width: 80%;
-            height: 300px;
+            height: auto;
             margin-right: 20px;
             border: 2px solid black;
         }
@@ -97,33 +98,34 @@
             top: 20px;
             left: 40px;
             display: flex;
-            gap: 40px;
+            gap: 20px; /* Ajustement pour les petits écrans */
         }
 
         .social-icons a {
             color: white;
-            font-size: 60px;
+            font-size: 30px; /* Ajustement pour les petits écrans */
             text-decoration: none;
         }
 
         /* Styles spécifiques aux écrans de moins de 600px */
         @media only screen and (max-width: 600px) {
             .content-container {
-                flex-direction: column; /* Empile les éléments en colonne */
+                margin-left: 5px;
+                margin-right: 5px; /* Ajustement pour les petits écrans */
             }
 
             .img-container {
-                margin-right: 0; /* Ajuste la marge pour les images sur de petits écrans */
+                margin-right: 0;
             }
 
             .text-container {
-                margin-top: 10px; /* Ajoute un espace entre l'image et le texte sur de petits écrans */
+                margin-top: 10px;
             }
 
             .social-icons {
-                position: static; /* Annule la position absolue pour que les icônes apparaissent dans le flux du document */
-                margin-top: 10px; /* Ajoute un espace entre le titre et les icônes sur de petits écrans */
-                text-align: center; /* Centre les icônes */
+                position: static;
+                margin-top: 10px;
+                text-align: center;
             }
         }
     </style>

@@ -60,16 +60,15 @@
 
         .content-container {
             display: flex;
-            flex-direction: column; /* Ajustement pour les petits écrans */
             margin-left: 10px;
             margin-right: 20px;
             margin-bottom: 30px;
         }
 
         .img-container {
-            width: 100%; /* Ajustement pour les petits écrans */
             max-width: 400px;
-            height: auto;
+            width: 80%;
+            height: 300px;
             margin-right: 20px;
             border: 2px solid black;
         }
@@ -98,34 +97,33 @@
             top: 20px;
             left: 40px;
             display: flex;
-            gap: 20px; /* Ajustement pour les petits écrans */
+            gap: 40px;
         }
 
         .social-icons a {
             color: white;
-            font-size: 30px; /* Ajustement pour les petits écrans */
+            font-size: 60px;
             text-decoration: none;
         }
 
         /* Styles spécifiques aux écrans de moins de 600px */
         @media only screen and (max-width: 600px) {
             .content-container {
-                margin-left: 5px;
-                margin-right: 5px; /* Ajustement pour les petits écrans */
+                flex-direction: column; /* Empile les éléments en colonne */
             }
 
             .img-container {
-                margin-right: 0;
+                margin-right: 0; /* Ajuste la marge pour les images sur de petits écrans */
             }
 
             .text-container {
-                margin-top: 10px;
+                margin-top: 10px; /* Ajoute un espace entre l'image et le texte sur de petits écrans */
             }
 
             .social-icons {
-                position: static;
-                margin-top: 10px;
-                text-align: center;
+                position: static; /* Annule la position absolue pour que les icônes apparaissent dans le flux du document */
+                margin-top: 10px; /* Ajoute un espace entre le titre et les icônes sur de petits écrans */
+                text-align: center; /* Centre les icônes */
             }
         }
     </style>

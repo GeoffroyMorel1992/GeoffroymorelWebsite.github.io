@@ -23,7 +23,7 @@
         header {
             font-size: 40px;
             padding: 10px 20px;
-            padding-left: 800px;
+            padding-left: 10px; /* Ajustement pour les petits écrans */
             background-color: rgb(29, 29, 96);
             color: white;
             display: flex;
@@ -45,6 +45,7 @@
 
         .content-container {
             display: flex;
+            flex-direction: column; /* Ajustement pour les petits écrans */
             justify-content: center;
             align-items: center;
             margin-top: 10px;
@@ -52,15 +53,16 @@
         }
 
         .img-container {
-            width: 400px;
-            height: 300px;
+            width: 100%; /* Ajustement pour les petits écrans */
+            max-width: 400px;
+            height: auto;
             margin: 10px;
             border: 2px solid rgb(0, 0, 0);
             border-radius: 5px;
         }
 
         .text-container {
-            max-width: 700px;
+            max-width: 100%; /* Ajustement pour les petits écrans */
             text-align: left;
             font-size: 18px;
             margin: 0 10px;
@@ -96,7 +98,6 @@
         /* Styles spécifiques aux écrans de moins de 600px */
         @media only screen and (max-width: 600px) {
             header {
-                padding-left: 0; /* Ajuste la marge pour le titre sur de petits écrans */
                 font-size: 24px; /* Ajuste la taille du titre sur de petits écrans */
             }
 

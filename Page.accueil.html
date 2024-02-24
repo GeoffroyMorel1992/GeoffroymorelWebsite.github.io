@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
+        /* Styles communs à toutes les tailles d'écrans */
         body {
             font-family: 'Arial Rounded MT Bold', sans-serif;
             margin: 0;
             padding: 0;
             background: url('C:\\Users\\Morel\\OneDrive\\Documents\\Formations\\IT tools\\Website\\all merge\\fond - finance.jpg') no-repeat center center fixed;
             background-size: cover;
-            position: relative; /* Added for positioning social icons */
+            position: relative;
         }
 
         h1,
@@ -96,13 +97,34 @@
             top: 20px;
             left: 40px;
             display: flex;
-            gap: 40px; /* Increased spacing */
+            gap: 40px;
         }
 
         .social-icons a {
             color: white;
-            font-size: 60px; /* Increased size */
-            text-decoration: none; /* Remove underline */
+            font-size: 60px;
+            text-decoration: none;
+        }
+
+        /* Styles spécifiques aux écrans de moins de 600px */
+        @media only screen and (max-width: 600px) {
+            .content-container {
+                flex-direction: column; /* Empile les éléments en colonne */
+            }
+
+            .img-container {
+                margin-right: 0; /* Ajuste la marge pour les images sur de petits écrans */
+            }
+
+            .text-container {
+                margin-top: 10px; /* Ajoute un espace entre l'image et le texte sur de petits écrans */
+            }
+
+            .social-icons {
+                position: static; /* Annule la position absolue pour que les icônes apparaissent dans le flux du document */
+                margin-top: 10px; /* Ajoute un espace entre le titre et les icônes sur de petits écrans */
+                text-align: center; /* Centre les icônes */
+            }
         }
     </style>
 </head>
@@ -169,5 +191,3 @@
 </body>
 
 </html>
-
-

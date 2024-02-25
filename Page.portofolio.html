@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Projects</title>
     <style>
-             body {
+        body {
             margin: 0;
             padding: 0;
             background-image: url('fond - claire.jpg');
@@ -42,11 +42,12 @@
 
         .content-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             margin-top: 10px;
             animation: moveFromLeft 1.5s ease-out;
         }
+
 
         .img-container {
             width: 400px;
@@ -69,28 +70,17 @@
             margin: 10px 0;
         }
 
+
         .view-project-button {
-            background-color: #3F51B5; /* Couleur verte pour le bouton */
-            color: #ffffff; /* Texte blanc sur le bouton */
-            border: 2px solid #3F51B5; /* Bordure de la même couleur que le fond */
+            background-color: #3F51B5;
+            color: #ffffff;
+            border: 2px solid #3F51B5;
             padding: 10px 20px;
             font-size: 16px;
             border-radius: 5px;
             margin-top: 10px;
             cursor: pointer;
         }
-
-        @keyframes moveFromLeft {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-    </style>
-
 
         @keyframes moveFromLeft {
             0% {

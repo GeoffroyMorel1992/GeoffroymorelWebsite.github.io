@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Projects</title>
-    <!-- Ajout de la balise link pour la feuille de style Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Styles communs à toutes les tailles d'écrans */
-        body {
+             body {
             margin: 0;
             padding: 0;
             background-image: url('fond - claire.jpg');
@@ -23,7 +20,7 @@
         header {
             font-size: 40px;
             padding: 10px 20px;
-            padding-left: 10px; /* Ajustement pour les petits écrans */
+            padding-left: 800px;
             background-color: rgb(29, 29, 96);
             color: white;
             display: flex;
@@ -45,7 +42,6 @@
 
         .content-container {
             display: flex;
-            flex-direction: column; /* Ajustement pour les petits écrans */
             justify-content: center;
             align-items: center;
             margin-top: 10px;
@@ -53,16 +49,15 @@
         }
 
         .img-container {
-            width: 100%; /* Ajustement pour les petits écrans */
-            max-width: 400px;
-            height: auto;
+            width: 400px;
+            height: 300px;
             margin: 10px;
             border: 2px solid rgb(0, 0, 0);
             border-radius: 5px;
         }
 
         .text-container {
-            max-width: 100%; /* Ajustement pour les petits écrans */
+            max-width: 700px;
             text-align: left;
             font-size: 18px;
             margin: 0 10px;
@@ -75,9 +70,9 @@
         }
 
         .view-project-button {
-            background-color: #3F51B5;
-            color: #ffffff;
-            border: 2px solid #3F51B5;
+            background-color: #3F51B5; /* Couleur verte pour le bouton */
+            color: #ffffff; /* Texte blanc sur le bouton */
+            border: 2px solid #3F51B5; /* Bordure de la même couleur que le fond */
             padding: 10px 20px;
             font-size: 16px;
             border-radius: 5px;
@@ -94,23 +89,16 @@
                 transform: translateX(0);
             }
         }
+    </style>
 
-        /* Styles spécifiques aux écrans de moins de 600px */
-        @media only screen and (max-width: 600px) {
-            header {
-                font-size: 24px; /* Ajuste la taille du titre sur de petits écrans */
+
+        @keyframes moveFromLeft {
+            0% {
+                transform: translateX(-100%);
             }
 
-            .content-container {
-                flex-direction: column;
-            }
-
-            .img-container {
-                margin: 0; /* Ajuste la marge pour les images sur de petits écrans */
-            }
-
-            .text-container {
-                margin: 10px 0; /* Ajoute un espace entre l'image et le texte sur de petits écrans */
+            100% {
+                transform: translateX(0);
             }
         }
     </style>

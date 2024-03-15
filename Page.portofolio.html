@@ -7,6 +7,9 @@
     <title>Portfolio Projects</title>
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: 0;
             padding: 0;
             background-image: url('fond - claire.jpg');
@@ -20,9 +23,10 @@
         header {
             font-size: 40px;
             padding: 10px 20px;
-            padding-left: 800px;
+            margin-left: 20px; /* Ajout de la marge à gauche */
             background-color: rgb(29, 29, 96);
             color: white;
+            width: calc(100% - 20px); /* Ajustement de la largeur avec la marge */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,13 +45,13 @@
         }
 
         .content-container {
+            flex: 1;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            margin-top: 10px;
-            animation: moveFromLeft 1.5s ease-out;
+            width: 80%; /* Ajout d'une largeur pour le contenu */
+            margin-top: 20px; /* Ajout d'une marge en haut */
         }
-
 
         .img-container {
             width: 400px;
@@ -69,7 +73,6 @@
             font-size: 18px;
             margin: 10px 0;
         }
-
 
         .view-project-button {
             background-color: #3F51B5;
@@ -114,8 +117,12 @@
 
 <body>
     <header>
-        Portfolio Projects
-        <a id="home-link" href="https://geoffroymorel1992.github.io/GeoffroyMorelWebsite.github.io/Page.accueil.html">Home</a>
+        <div>
+            Portfolio Projects
+        </div>
+        <div>
+            <a id="home-link" href="https://geoffroymorel1992.github.io/GeoffroyMorelWebsite.github.io/Page.accueil.html">Home</a>
+        </div>
     </header>
 
     <div class="additional-text">
@@ -128,7 +135,7 @@
     <!-- First Block -->
     <div class="content-container">
         <div class="text-container Financial Statements">
-            <h2>Financial Statement:</h2>
+            <h2>Financial Statements:</h2>
             <p>Using knowledge in accounting and cost accounting, we will be able to set up the following financial statements:</p>
             <ul>
                 <li>Income statement</li>

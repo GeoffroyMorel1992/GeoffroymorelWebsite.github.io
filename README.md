@@ -4,6 +4,7 @@ I have developed a website with the aim of concisely showcasing both my professi
 
 This presentation is tailored specifically to resonate with potential employers within the industrial sector.
 
+https://geoffroymorel1992.github.io/GeoffroyMorelWebsite.github.io/Page.accueil.html
 
 # Home Page
 
